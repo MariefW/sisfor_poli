@@ -54,48 +54,6 @@
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Selamat Datang</h1>
-
-          <!-- <div class="table-responsive">
-
-  <nav>
-    <a href="form-daftar.php">[+] Tambah Data Baru</a>
-  </nav>
-  <br>
-  <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>NIS</th>
-      <th>Nama Lengkap</th>
-      <th>Jenis Kelamin</th>
-      <th>jurusan</th>
-      <th>Email</th>
-      <th>Tindakan</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php
-    $sql = "SELECT * FROM tb_gts";
-    $query = mysqli_query($db, $sql);
-    $no=1;
-    while($siswa = mysqli_fetch_array($query)){
-      echo "<tr>";
-      echo "<td>".$siswa['id']."</td>";
-      echo "<td>".$siswa['nis']."</td>";
-      echo "<td>".$siswa['nama']."</td>";
-      echo "<td>".$siswa['jenis_kelamin']."</td>";
-      echo "<td>".$siswa['jurusan']."</td>";
-      echo "<td>".$siswa['email']."</td>";
-      echo "<td>";
-      echo "<td><a href='form-edit.php?id=".$siswa['id']."'class='btn btn-success'>Edit</button></a> | ";
-      echo "<a href='hapus.php?id=".$siswa['id']."'class='btn btn-danger'>Hapus</a></td>";
-      echo "</td>";
-      $no++;
-    }
-    ?>
-  </tbody>
-  <p>Total: <?php echo mysqli_num_rows($query) ?></p>
-          </div> -->
         </div>
       </div>
     </div>
